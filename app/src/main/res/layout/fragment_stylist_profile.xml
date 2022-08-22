@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layoutProfile"
+    android:background="@color/white"
+    android:fitsSystemWindows="false"
+    tools:context="com.laioffer.beautips.Fragments.StylistPage.StylistProfileFragment">
+
+<!--    <androidx.appcompat.widget.Toolbar-->
+<!--        android:id="@+id/toolbar3"-->
+<!--        android:minHeight="?attr/actionBarSize"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:titleTextColor="@android:color/black"-->
+<!--        android:background="@color/white"-->
+<!--        tools:ignore="MissingConstraints">-->
+<!--    </androidx.appcompat.widget.Toolbar>-->
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar4"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        tools:ignore="MissingConstraints">
+        <ImageButton
+            android:id="@+id/vector4"
+            android:layout_width="10.74dp"
+            android:layout_height="18.76dp"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/vector"
+            />
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+    <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab"
+            android:layout_width="219dp"
+            android:visibility="invisible"
+            android:layout_height="25dp"
+            android:layout_marginBottom="350dp"
+            android:paddingBottom="2dp"
+            app:layout_constraintBottom_toTopOf="@+id/schedule_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:tabIndicatorColor="#FA7575"
+            app:tabTextAppearance="@style/tab_text"
+            app:tabTextColor="@color/black"
+            tools:ignore="MissingConstraints">
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Posts" />
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reviews" />
+        </com.google.android.material.tabs.TabLayout>
+
+    <ImageButton
+        android:id="@+id/schedule_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="550dp"
+        android:layout_marginEnd="120dp"
+        android:background="#0000"
+        android:elevation="20dp"
+        android:src="@drawable/scheudle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/viewPager"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginBottom="5dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar2"
+        tools:ignore="MissingConstraints">
+
+
+
+    </androidx.viewpager.widget.ViewPager>
+    <ImageView
+        android:id="@+id/shade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65dp"
+        android:scaleX="2.5"
+        android:src="@drawable/shade"
+        android:visibility="invisible"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

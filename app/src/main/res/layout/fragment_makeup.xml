@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+tools:context=".Fragments.MakeupPage.MakeupFragment">
+
+<TextView
+    android:id="@+id/makeupTopText"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="top|left"
+    android:layout_margin="24dp"
+    android:layout_marginTop="45dp"
+    android:fontFamily="Montserrat"
+    android:text="Makeup Search"
+    android:textColor="@color/black"
+    android:textFontWeight="600"
+    android:gravity="top"
+    android:layout_alignParentTop = "true"
+    android:textSize="18dp" />
+<ImageView
+    android:id="@+id/makeuploading"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:layout_marginTop="300dp"
+    android:layout_marginLeft="150dp"
+    android:src="@drawable/loading"
+    android:visibility="gone"
+    android:elevation="10dp">
+
+</ImageView>
+<ScrollView
+    android:id="@+id/makeupScroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="60dp">
+    <LinearLayout
+        android:id="@+id/fatherLinear"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <LinearLayout
+            android:id="@+id/brandOnclick"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="false"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="24dp"
+            android:orientation="horizontal"
+            android:scrollbars="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="17dp"
+                android:layout_weight="1"
+                android:fontFamily="Montserrat"
+                android:text="Brand"
+                android:textColor="@color/black"
+                android:textFontWeight="500"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/brandPlus"
+                android:layout_width="wrap_content"
+                android:layout_height="17dp"
+                android:layout_weight="2"
+                android:fontFamily="Montserrat"
+                android:gravity="right"
+                android:text="+"
+                android:textColor="@color/black"
+                android:textSize="14dp" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="-1dp"
+            android:background="@color/light_gray" />
+        <TableLayout
+            android:orientation="horizontal"
+            android:id="@+id/hideBrand"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:visibility="gone"
+            android:layout_height="wrap_content">
+            <TableRow>
+                <TextView
+                    android:id="@+id/MaybellineIcon"
+                    android:layout_width="90dp"
+                    android:layout_height="24dp"
+                    android:paddingRight="10dp"
+                    android:background="@drawable/blackborder"
+                    android:paddingLeft="12dp"
+                    android:textSize="14dp"
+                    android:fontFamily="Montserrat"
+                    android:layout_marginRight="35dp"
+                    android:text="Maybelline"
+                    android:paddingTop="1dp"
+                    android:layout_column="1"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/diorIcon"
+                    android:layout_width="50dp"
+                    android:layout_height="24dp"
+                    android:background="@drawable/blackborder"
+                    android:paddingLeft="10dp"
+                    android:textSize="14dp"
+                    android:layout_marginLeft="-25dp"
+                    android:paddingRight="10dp"
+                    android:fontFamily="Montserrat"
+                    android:text="Dior"
+                    android:paddingTop="1dp"
+                    android:layout_column="2"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:id="@+id/LOrealIcon"
+                    android:layout_width="65dp"
+                    android:layout_height="24dp"
+                    android:background="@drawable/blackborder"
+                    android:paddingLeft="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textSize="14dp"
+                    android:fontFamily="Montserrat"
+                    android:paddingTop="1dp"
+                    android:text="L'Oreal"
+                    android:layout_column="3"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:id="@+id/orlyIcon"
+                    android:layout_width="50dp"
+                    android:layout_height="24dp"
+                    android:background="@drawable/blackborder"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="14dp"
+                    android:fontFamily="Montserrat"
+                    android:text="Orly"
+                    android:layout_column="4"
+                    android:paddingTop="1dp"
+                    android:textColor="@color/black" />
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/cliniqueIcon"
+                    android:layout_width="90dp"
+                    android:layout_height="24dp"
+                    android:paddingRight="10dp"
+                    android:background="@drawable/blackborder"
+                    android:paddingLeft="12dp"
+                    android:textSize="14dp"
+                    android:fontFamily="Montserrat"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="35dp"
+                    android:text="Clinique"
+                    android:paddingTop="1dp"
+                    android:layout_column="1"
+                    android:textColor="@color/black" />
+
+            </TableRow>
+        </TableLayout>
+
+        <LinearLayout
+            android:id="@+id/typeOnclick"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:scrollbars = "vertical"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="17dp"
+                android:textSize="14dp"
+                android:fontFamily="Montserrat"
+                android:text="Product Type"
+                android:textFontWeight="500"
+                android:textColor="@color/black"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/typePlus"
+                android:layout_width="wrap_content"
+                android:layout_height="17dp"
+                android:layout_weight="2"
+                android:fontFamily="Montserrat"
+                android:text="+"
+                android:textColor="@color/black"
+                android:gravity="right"
+                android:textSize="14dp" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="-1dp"
+            android:background="@color/light_gray" />
+        <TableLayout
+            android:orientation="horizontal"
+            android:id="@+id/hideType"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:visibility="gone"
+            android:layout_height="wrap_content">
+            <TableRow>
+                <TextView
+                    android:id="@+id/foundationIcon"
+                    android:layout_width="100dp"
+                    android:layout_height="24dp"
+                    android:paddingRight="12dp"
+                    android:background="@drawable/blackborder"
+                    android:paddingLeft="17dp"
+                    android:textSize="14dp"
+                    android:fontFamily="Montserrat"
+                    android:text="foundation"
+                    android:paddingTop="1dp"
+                    android:layout_column="1"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/lipstickIcon"
+                    android:layout_width="70dp"
+                    android:layout_height="24dp"
+                    android:background="@drawable/blackborder"
+                    android:paddingLeft="12dp"
+                    android:textSize="14dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:paddingRight="1dp"
+                    android:fontFamily="Montserrat"
+                    android:text="lipstick"
+                    android:paddingTop="1dp"
+                    android:layout_column="2"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:id="@+id/blushIcon"
+                    android:layout_width="50dp"
+                    android:layout_height="24dp"
+                    android:background="@drawable/blackborder"
+                    android:paddingLeft="15dp"
+                    android:layout_marginLeft="-5dp"
+                    android:layout_marginRight="10dp"
+                    android:paddingRight="10dp"
+                    android:textSize="14dp"
+                    android:fontFamily="Montserrat"
+                    android:paddingTop="1dp"
+                    android:text="blush"
+                    android:layout_column="3"
+
+                    android:textColor="@color/black" />
+                <TextView
+                    android:id="@+id/eyeshadowIcon"
+                    android:layout_width="90dp"
+                    android:layout_height="24dp"
+                    android:background="@drawable/blackborder"
+                    android:paddingLeft="12dp"
+                    android:layout_marginLeft="-5dp"
+                    android:textSize="14dp"
+                    android:fontFamily="Montserrat"
+                    android:text="eyeshadow"
+                    android:paddingTop="1dp"
+                    android:layout_column="4"
+                    android:textColor="@color/black" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:id="@+id/nailpolishIcon"
+                    android:layout_width="90dp"
+                    android:layout_height="24dp"
+                    android:paddingRight="12dp"
+                    android:background="@drawable/blackborder"
+                    android:paddingLeft="17dp"
+                    android:textSize="14dp"
+                    android:fontFamily="Montserrat"
+                    android:text="nail polish"
+                    android:layout_column="1"
+                    android:layout_marginTop="5dp"
+                    android:paddingTop="1dp"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/eyelinerIcon"
+                    android:layout_width="60dp"
+                    android:layout_height="24dp"
+                    android:background="@drawable/blackborder"
+                    android:paddingLeft="12dp"
+                    android:textSize="14dp"
+                    android:layout_marginLeft="5dp"
+                    android:paddingRight="10dp"
+                    android:fontFamily="Montserrat"
+                    android:text="eyeliner"
+                    android:layout_column="2"
+                    android:paddingTop="1dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:id="@+id/liplinerIcon"
+                    android:layout_width="77dp"
+                    android:layout_height="24dp"
+                    android:background="@drawable/blackborder"
+                    android:paddingLeft="12dp"
+                    android:layout_marginLeft="5dp"
+                    android:paddingRight="12dp"
+                    android:textSize="14dp"
+                    android:fontFamily="Montserrat"
+                    android:layout_marginRight="-10dp"
+                    android:paddingTop="1dp"
+                    android:text="lip liner"
+                    android:layout_column="3"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/black" />
+
+
+            </TableRow>
+        </TableLayout>
+
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_height="24dp">
+            <TextView
+                android:id="@+id/cancel_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:fontFamily="Montserrat"
+                android:text="@string/Clear_All"
+                android:layout_marginTop="6dp"
+                android:textColor="@color/gray"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/search"
+                android:layout_width="75dp"
+                android:layout_height="24dp"
+                android:background="@drawable/search_btn"
+                android:textColor="@color/white"
+                android:layout_gravity="right"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/MakeuptotalMatched"
+                android:text="0 set match"
+                android:textFontWeight="300"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="25dp"
+                android:layout_height="wrap_content">
+
+            </TextView>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/printurl"
+            android:layout_width="100dp"
+            android:layout_height="25dp">
+
+        </TextView>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/Makeup_results_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    </LinearLayout>
+
+</ScrollView>
+<Button
+    android:id="@+id/toTop"
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentBottom="true"
+    android:background="@drawable/large_icon"
+    android:layout_gravity="end"
+    android:layout_marginBottom="16dp"
+    app:borderWidth="0dp"
+    android:layout_marginRight="16dp" />
+</RelativeLayout>

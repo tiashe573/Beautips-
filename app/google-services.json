@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "941107835427",
+    "firebase_url": "https://beautips-54eb3-default-rtdb.firebaseio.com",
+    "project_id": "beautips-54eb3",
+    "storage_bucket": "beautips-54eb3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:941107835427:android:ded9656aae168a5decb796",
+        "android_client_info": {
+          "package_name": "com.laioffer.Beautips"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "941107835427-9al179r01lqq4d9pf8l0ntpkpg66jh26.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA1VPaPqCXvKbUW4-l_5u5iTEGSiR-YyyM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "941107835427-9al179r01lqq4d9pf8l0ntpkpg66jh26.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:941107835427:android:4129e771adbb134fecb796",
+        "android_client_info": {
+          "package_name": "com.laioffer.beautips"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "941107835427-9al179r01lqq4d9pf8l0ntpkpg66jh26.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA1VPaPqCXvKbUW4-l_5u5iTEGSiR-YyyM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "941107835427-9al179r01lqq4d9pf8l0ntpkpg66jh26.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

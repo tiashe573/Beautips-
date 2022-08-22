@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 边框颜色值 -->
+    <item android:state_selected="false">
+        <shape>
+            <solid android:color="@color/transparent" /><!--下划线颜色-->
+        </shape>
+    </item >
+
+    <item android:state_selected="true" android:bottom="1dp"/> <!--下划线厚度-->
+    <shape>
+        <solid android:color="@color/black" /><!--背景色 不能透明否则会显示上面的下划线颜色-->
+    </shape>
+
+
+</selector>

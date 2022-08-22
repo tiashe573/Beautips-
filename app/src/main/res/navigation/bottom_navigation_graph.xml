@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.laioffer.beautips.Fragments.HomePage.HomeFragment"
+        tools:layout="@layout/fragment_home" >
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_list"
+        android:name="com.laioffer.beautips.Fragments.StylistPage.StylistList.StylistListFragment"
+        tools:layout="@layout/fragment_stylist_list" >
+
+    </fragment>
+
+<!--    <fragment-->
+<!--        android:id="@+id/navigation_profile_page"-->
+<!--        android:name="com.laioffer.beautips.Fragments.StylistPage.StylistProfileFragment"-->
+<!--        tools:layout="@layout/fragment_stylist_profile" >-->
+
+<!--    </fragment>-->
+
+    <fragment
+        android:id="@+id/navigation_group_test2"
+        android:name="com.laioffer.beautips.Fragments.ClosetPage.ClosetFragment"
+        tools:layout="@layout/fragment_closet" >
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/navigation_group_test3"
+        android:name="com.laioffer.beautips.Fragments.testFrag3"
+        tools:layout="@layout/stylist_info_recycler_component" >
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_makeup"
+        android:name="com.laioffer.beautips.Fragments.MakeupPage.MakeupFragment"
+        tools:layout="@layout/fragment_makeup" >
+    </fragment>
+
+</navigation>

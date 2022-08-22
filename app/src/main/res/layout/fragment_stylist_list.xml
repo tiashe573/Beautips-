@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/topview"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.laioffer.beautips.Fragments.StylistPage.StylistList.StylistListFragment">
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="210dp"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="@font/montserrat"
+        android:text="Find your Stylist"
+        android:textColor="#000000"
+        android:textFontWeight="600"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/body_shape"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/body_shape"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="0dp"
+        android:fontFamily="@font/montserrat"
+
+        android:text="Body Shape"
+        android:textColor="#000000"
+        android:textSize="12dp"
+        app:layout_constraintStart_toStartOf="@id/title"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        android:background="@drawable/frame_418"
+        tools:ignore="MissingConstraints"
+        android:gravity="center"
+        />
+
+
+    <TextView
+        android:id="@+id/rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="14dp"
+        android:fontFamily="@font/montserrat"
+        android:text="Rating"
+        android:textColor="#000000"
+        android:textSize="12dp"
+        app:layout_constraintStart_toEndOf="@id/body_shape"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        tools:ignore="MissingConstraints"
+        android:background="@drawable/frame_1"
+        android:gravity="center"/>
+
+
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/stylist_list_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="560dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rating" />
+
+    <!--    <androidx.cardview.widget.CardView-->
+<!--        android:layout_width="324dp"-->
+<!--        android:layout_height="65dp"-->
+<!--        android:layout_marginTop="18dp"-->
+<!--        android:layout_marginStart="24dp"-->
+<!--        app:cardCornerRadius="10dp"-->
+<!--        app:cardElevation="20dp"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/rating"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        tools:layout_editor_absoluteX="1dp">-->
+
+<!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_margin="6dp">-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/stylist_image"-->
+<!--                android:layout_width="53dp"-->
+<!--                android:layout_height="53dp"-->
+<!--                android:src="@drawable/myimage"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--            <View-->
+<!--                android:id="@+id/frame_431"-->
+<!--                android:layout_width="16dp"-->
+<!--                android:layout_height="16dp"-->
+<!--                android:layout_alignParentLeft="true"-->
+<!--                android:layout_alignParentTop="true"-->
+<!--                android:layout_marginStart="36dp"-->
+<!--                android:layout_marginTop="37dp"-->
+<!--                android:layout_marginEnd="20dp"-->
+<!--                android:layout_marginBottom="83dp"-->
+<!--                android:background="@drawable/frame_431"-->
+<!--                android:elevation="1dp"-->
+<!--                app:layout_constraintHorizontal_bias="0.0"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent"-->
+<!--                tools:ignore="MissingConstraints" />-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/vimage"-->
+<!--                android:layout_width="16dp"-->
+<!--                android:layout_height="16dp"-->
+<!--                android:layout_marginStart="36dp"-->
+<!--                android:elevation="3dp"-->
+<!--                android:scaleX="0.4"-->
+<!--                android:scaleY="0.4"-->
+<!--                android:src="@drawable/vvector"-->
+<!--                tools:ignore="MissingConstraints"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintBottom_toBottomOf="@+id/frame_431"-->
+<!--                tools:layout_editor_absoluteX="37dp"-->
+<!--                tools:layout_editor_absoluteY="37dp" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/name"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="17dp"-->
+<!--                android:layout_marginTop="13px"-->
+<!--                android:fontFamily="@font/montserrat"-->
+<!--                android:text="Abby"-->
+<!--                android:textSize="14dp"-->
+<!--                app:layout_constraintStart_toEndOf="@id/stylist_image"-->
+<!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/stylist_title"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="16dp"-->
+<!--                android:layout_marginTop="17px"-->
+<!--                android:fontFamily="@font/montserrat"-->
+<!--                android:text="Beautips advisor"-->
+<!--                android:textColor="#AAAAAA"-->
+
+<!--                android:textSize="11dp"-->
+<!--                app:layout_constraintStart_toEndOf="@id/name"-->
+<!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+
+<!--            <RatingBar-->
+<!--                android:id="@+id/ratingBar"-->
+<!--                style="@style/Widget.AppCompat.RatingBar.Small"-->
+<!--                android:layout_width="82dp"-->
+<!--                android:layout_height="16dp"-->
+<!--                android:layout_marginStart="17dp"-->
+<!--                android:layout_marginTop="34dp"-->
+<!--                android:layout_marginBottom="11.6dp"-->
+<!--                android:numStars="5"-->
+<!--                android:progressTint="#FFEC40"-->
+<!--                android:rating="4"-->
+<!--                android:scaleX="1"-->
+<!--                android:scaleY="1"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintStart_toEndOf="@id/stylist_image"-->
+<!--                app:layout_constraintTop_toTopOf="parent"-->
+<!--                app:layout_constraintVertical_bias="0.0"-->
+<!--                tools:ignore="MissingConstraints" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/reviews"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="8.2dp"-->
+<!--                android:layout_marginTop="32dp"-->
+<!--                android:fontFamily="@font/montserrat"-->
+<!--                android:text="80 Reviews"-->
+<!--                android:textColor="#666666"-->
+<!--                android:textSize="12dp"-->
+<!--                app:layout_constraintStart_toEndOf="@id/ratingBar"-->
+<!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+
+<!--    </androidx.cardview.widget.CardView>-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+    <!-- drawable/frame_431.xml -->
+    <vector
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:aapt="http://schemas.android.com/aapt"
+        android:width="21.97dp"
+        android:height="21.77dp"
+        android:viewportWidth="21.97"
+        android:viewportHeight="21.77"
+        >
+
+        <group>
+
+            <clip-path
+                android:pathData="M10.8868 0H11.0823C17.0949 0 21.9691 4.87418 21.9691 10.8868C21.9691 16.8994 17.0949 21.7736 11.0823 21.7736H10.8868C4.87418 21.7736 0 16.8994 0 10.8868C0 4.87418 4.87418 0 10.8868 0Z"
+                />
+
+            <group
+                android:translateX="-0.73"
+                android:translateY="-0.629"
+                android:pivotX="10.985"
+                android:pivotY="10.887"
+                android:scaleX="4.967"
+                android:scaleY="10.733"
+                android:rotation="-82.286"
+                >
+
+                <path
+                    android:pathData="M0 0V21.7736H21.9691V0"
+                    >
+
+                    <aapt:attr name="android:fillColor">
+
+                        <gradient
+                            android:type="linear"
+                            android:startX="5.492"
+                            android:startY="10.887"
+                            android:endX="16.477"
+                            android:endY="10.887"
+                            >
+
+                            <item
+                                android:color="#FF629C"
+                                android:offset="0"
+                                />
+
+                            <item
+                                android:color="#FFC36D"
+                                android:offset="1"
+                                />
+
+                        </gradient>
+
+                    </aapt:attr>
+
+                </path>
+
+            </group>
+
+        </group>
+
+    </vector>
+
+

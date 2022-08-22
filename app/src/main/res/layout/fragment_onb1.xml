@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rectangle_150"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".Fragments.startup.onb1Fragment">
+
+    <TextView
+        android:id="@+id/beautips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="124dp"
+
+        android:layout_marginBottom="0dp"
+        android:fontFamily="@font/lao_mn"
+        android:gravity="center_horizontal"
+        android:text="Beautips"
+        android:textColor="@color/white"
+        android:textSize="48dp" />
+
+    <TextView
+        android:id="@+id/your_body_s"
+        android:layout_width="256dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="58dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="58dp"
+        android:layout_marginBottom="300dp"
+        android:fontFamily="@font/montserrat"
+        android:gravity="center_horizontal"
+        android:text="Your body shape's sytle advior"
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+
+
+    <ImageButton
+        android:id="@+id/star_now"
+        android:layout_width="173dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/frame_419"
+        android:gravity="center_horizontal"
+        android:text="Start Now"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/login_1"
+        android:layout_width="153dp"
+        android:layout_height="40dp"
+        android:clickable="true"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginBottom="36dp"
+        android:gravity="center_horizontal"
+        android:text="Log In"
+        android:textColor="@color/white"
+        android:textSize="18dp" />
+
+</LinearLayout>

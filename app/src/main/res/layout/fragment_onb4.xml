@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/x"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="0dp"
+    android:gravity="center_horizontal"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+        <ImageButton
+            android:id="@+id/vector3"
+            android:layout_width="10.74dp"
+            android:layout_height="18.76dp"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/vector"
+            />
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/what_s_your"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="0dp"
+        android:text="What's your size?"
+
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/top"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="48dp"
+        android:text="Top"
+        android:textColor="@color/black"
+        android:textSize="16dp" />
+
+    <TableLayout
+        android:id="@+id/TableLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+
+        tools:context=".MainActivity"
+        tools:ignore="MissingConstraints">
+
+        <TableLayout
+            android:id="@+id/TableLayout2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="0,1,3,5,7,9,10">
+
+            <TableRow
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="0dp">
+
+                <TextView android:layout_width="23dp" />
+
+                <TextView android:layout_width="23dp" />
+
+
+                <Button
+                    android:id="@+id/XS"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/buttonshape"
+                    android:fontFamily="@font/montserrat"
+                    android:text="XS"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+
+                <TextView android:layout_width="20dp" />
+
+                <Button
+                    android:id="@+id/S"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/buttonshape"
+                    android:fontFamily="@font/montserrat"
+                    android:text="S"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+
+                <TextView android:layout_width="20dp" />
+
+                <Button
+                    android:id="@+id/M"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/buttonshape"
+                    android:fontFamily="@font/montserrat"
+                    android:text="M"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+
+                <TextView android:layout_width="20dp" />
+
+                <Button
+                    android:id="@+id/L"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/buttonshape"
+                    android:fontFamily="@font/montserrat"
+                    android:text="L"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+
+                <TextView android:layout_width="23dp" />
+
+                <TextView android:layout_width="23dp" />
+            </TableRow>
+
+
+            <TableRow android:layout_marginTop="14dp">
+
+                <TextView android:layout_width="23dp" />
+
+                <TextView android:layout_width="23dp" />
+
+                <Button
+                    android:id="@+id/XL"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/buttonshape"
+                    android:fontFamily="@font/montserrat"
+                    android:text="XL"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+
+                <TextView android:layout_width="20dp" />
+
+                <Button
+                    android:id="@+id/XL2"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/buttonshape"
+                    android:fontFamily="@font/montserrat"
+                    android:text="2XL"
+
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+
+                <TextView android:layout_width="20dp" />
+
+                <Button
+                    android:id="@+id/XL3"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/buttonshape"
+                    android:layout_marginTop="0dp"
+                    android:fontFamily="@font/montserrat"
+                    android:text="3XL"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+
+                <TextView android:layout_width="20dp" />
+
+                <Button
+                    android:id="@+id/XLL3"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/buttonshape"
+                    android:fontFamily="@font/montserrat"
+                    android:text="3XL+"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+
+                <TextView android:layout_width="23dp" />
+
+                <TextView android:layout_width="23dp" />
+            </TableRow>
+
+        </TableLayout>
+
+    </TableLayout>
+
+
+    <TextView
+        android:id="@+id/bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="48dp"
+        android:layout_marginBottom="20dp"
+        android:text="Bottom"
+        android:textColor="@color/black"
+        android:textSize="16dp" />
+
+    <TableLayout
+        android:id="@+id/TableLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:gravity="center_vertical"
+        tools:context=".MainActivity"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="143dp"
+        tools:layout_editor_absoluteY="435dp">
+
+        <TableLayout
+            android:id="@+id/TableLayout4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="0,1,3,5,7,9,10">
+
+            <TableRow>
+
+                <TextView />
+
+                <TextView />
+
+                <Button
+                    android:id="@+id/b_XS"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/buttonshape"
+                    android:fontFamily="@font/montserrat"
+                    android:text="XS"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+
+                <TextView />
+
+                <Button
+                    android:id="@+id/b_S"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/buttonshape"
+                    android:fontFamily="@font/montserrat"
+                    android:text="S"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+
+                <TextView />
+
+                <Button
+                    android:id="@+id/b_M"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/buttonshape"
+                    android:fontFamily="@font/montserrat"
+                    android:text="M"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+
+                <TextView />
+
+                <Button
+                    android:id="@+id/b_L"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/buttonshape"
+                    android:fontFamily="@font/montserrat"
+                    android:text="L"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+
+                <TextView />
+
+                <TextView />
+            </TableRow>
+
+
+            <TableRow android:layout_marginTop="14dp">
+
+                <TextView />
+
+                <TextView />
+
+                <Button
+                    android:id="@+id/b_XL"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/buttonshape"
+                    android:fontFamily="@font/montserrat"
+                    android:text="XL"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+
+                <TextView />
+
+                <Button
+                    android:id="@+id/b_XL2"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/buttonshape"
+                    android:fontFamily="@font/montserrat"
+                    android:text="2XL"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+
+                <TextView />
+
+                <Button
+                    android:id="@+id/b_XL3"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/buttonshape"
+                    android:fontFamily="@font/montserrat"
+                    android:text="3XL"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+
+                <TextView />
+
+                <Button
+                    android:id="@+id/b_XLL3"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/buttonshape"
+                    android:fontFamily="@font/montserrat"
+                    android:text="3XL+"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+
+                <TextView />
+
+                <TextView />
+            </TableRow>
+
+        </TableLayout>
+
+    </TableLayout>
+
+    <ImageButton
+        android:id="@+id/next"
+        android:layout_width="124dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="75.5dp"
+        android:layout_marginBottom="48dp"
+        android:background="@drawable/frame_434"
+        android:gravity="center_horizontal" />
+
+
+</LinearLayout>

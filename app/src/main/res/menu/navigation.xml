@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/home_nav"
+        android:title="home" />
+
+    <item
+        android:id="@+id/navigation_group_test2"
+        android:icon="@drawable/closet_nav"
+        android:title="closet" />
+
+<!--    <item-->
+<!--        android:id="@+id/navigation_profile_page"-->
+<!--        android:icon="@drawable/target"-->
+<!--        android:title="target" />-->
+
+    <item
+        android:id="@+id/navigation_list"
+        android:icon="@drawable/target_nav"
+        android:title="target" />
+
+    <item
+        android:id="@+id/navigation_group_test3"
+        android:icon="@drawable/people_nav"
+        android:title="target" />
+
+    <item
+        android:id="@+id/navigation_makeup"
+        android:icon="@drawable/people_nav"
+        android:title="target" />
+</menu>

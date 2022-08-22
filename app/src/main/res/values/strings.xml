@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Beautips</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="underline"><u>Create an account to save style tips, get personalized advice from stylists, and more.</u></string>
+    <declare-styleable name="UnderlineTextView">
+        <attr name="underline_color" format="color" />
+        <attr name="underline_height" format="dimension" />
+    </declare-styleable>
+
+    <string name="Clear_All"><u>Clear All</u></string>
+</resources>

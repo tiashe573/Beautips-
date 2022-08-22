@@ -1,0 +1,822 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Fragments.ClosetPage.ClosetFragment">
+
+    <TextView
+        android:id="@+id/topText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|left"
+        android:layout_margin="24dp"
+        android:layout_marginTop="45dp"
+        android:fontFamily="Montserrat"
+        android:text="Matched for You"
+        android:textColor="@color/black"
+        android:textFontWeight="600"
+        android:gravity="top"
+        android:layout_alignParentTop = "true"
+        android:textSize="18dp" />
+    <ImageView
+        android:id="@+id/loading"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginLeft="150dp"
+        android:src="@drawable/loading"
+        android:visibility="gone"
+        android:elevation="10dp">
+
+    </ImageView>
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp">
+    <LinearLayout
+        android:id="@+id/fatherLinear"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+            <LinearLayout
+                android:id="@+id/bodyShapeOnclick"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="false"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="24dp"
+                android:orientation="horizontal"
+                android:scrollbars="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="17dp"
+                    android:layout_weight="1"
+                    android:fontFamily="Montserrat"
+                    android:text="Body shape"
+                    android:textColor="@color/black"
+                    android:textFontWeight="500"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/bodyShapePlus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="17dp"
+                    android:layout_weight="2"
+                    android:fontFamily="Montserrat"
+                    android:gravity="right"
+                    android:text="+"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+            </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="-1dp"
+            android:background="@color/light_gray" />
+            <TableLayout
+                android:orientation="horizontal"
+                android:id="@+id/hideBodyShape"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:visibility="gone"
+                android:layout_height="wrap_content">
+                <TableRow>
+                    <TextView
+                        android:id="@+id/pearIcon"
+                        android:layout_width="53dp"
+                        android:layout_height="24dp"
+                        android:paddingRight="10dp"
+                        android:background="@drawable/blackborder"
+                        android:paddingLeft="12dp"
+                        android:textSize="14dp"
+                        android:fontFamily="Montserrat"
+                        android:layout_marginRight="35dp"
+                        android:text="Pear"
+                        android:paddingTop="1dp"
+                        android:layout_column="1"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/roundIcon"
+                        android:layout_width="65dp"
+                        android:layout_height="24dp"
+                        android:background="@drawable/blackborder"
+                        android:paddingLeft="10dp"
+                        android:textSize="14dp"
+                        android:layout_marginLeft="-25dp"
+                        android:paddingRight="10dp"
+                        android:fontFamily="Montserrat"
+                        android:text="Round"
+                        android:paddingTop="1dp"
+                        android:layout_column="2"
+                        android:textColor="@color/black" />
+                    <TextView
+                        android:id="@+id/triangleIcon"
+                        android:layout_width="73dp"
+                        android:layout_height="24dp"
+                        android:background="@drawable/blackborder"
+                        android:paddingLeft="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:textSize="14dp"
+                        android:fontFamily="Montserrat"
+                        android:paddingTop="1dp"
+                        android:text="Triangle"
+                        android:layout_column="3"
+                        android:textColor="@color/black" />
+                    <TextView
+                        android:id="@+id/rectangleIcon"
+                        android:layout_width="85dp"
+                        android:layout_height="24dp"
+                        android:background="@drawable/blackborder"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="14dp"
+                        android:fontFamily="Montserrat"
+                        android:text="Rectangle"
+                        android:layout_column="4"
+                        android:paddingTop="1dp"
+                        android:textColor="@color/black" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:id="@+id/hourglassIcon"
+                        android:layout_width="65dp"
+                        android:layout_height="24dp"
+                        android:paddingRight="10dp"
+                        android:background="@drawable/blackborder"
+                        android:paddingLeft="10dp"
+                        android:textSize="14dp"
+                        android:fontFamily="Montserrat"
+                        android:layout_marginTop="5dp"
+                        android:text="Hourglass"
+                        android:paddingTop="1dp"
+                        android:layout_column="1"
+                        android:textColor="@color/black" />
+
+                </TableRow>
+            </TableLayout>
+
+            <LinearLayout
+                android:id="@+id/occasionOnclick"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:scrollbars = "vertical"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="17dp"
+                    android:textSize="14dp"
+                    android:fontFamily="Montserrat"
+                    android:text="Occasion"
+                    android:textFontWeight="500"
+                    android:textColor="@color/black"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/occasion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="17dp"
+                    android:layout_weight="2"
+                    android:fontFamily="Montserrat"
+                    android:text="+"
+                    android:textColor="@color/black"
+                    android:gravity="right"
+                    android:textSize="14dp" />
+            </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="-1dp"
+            android:background="@color/light_gray" />
+            <TableLayout
+                android:orientation="horizontal"
+                android:id="@+id/hideOccasion"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:visibility="gone"
+                android:layout_height="wrap_content">
+                <TableRow>
+                    <TextView
+                        android:id="@+id/weddingIcon"
+                        android:layout_width="90dp"
+                        android:layout_height="24dp"
+                        android:paddingRight="12dp"
+                        android:background="@drawable/blackborder"
+                        android:paddingLeft="17dp"
+                        android:textSize="14dp"
+                        android:fontFamily="Montserrat"
+                        android:text="Wedding"
+                        android:paddingTop="1dp"
+                        android:layout_column="1"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/partyIcon"
+                        android:layout_width="60dp"
+                        android:layout_height="24dp"
+                        android:background="@drawable/blackborder"
+                        android:paddingLeft="12dp"
+                        android:textSize="14dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
+                        android:paddingRight="1dp"
+                        android:fontFamily="Montserrat"
+                        android:text="Party"
+                        android:paddingTop="1dp"
+                        android:layout_column="2"
+                        android:textColor="@color/black" />
+                    <TextView
+                        android:id="@+id/beachIcon"
+                        android:layout_width="67dp"
+                        android:layout_height="24dp"
+                        android:background="@drawable/blackborder"
+                        android:paddingLeft="15dp"
+                        android:layout_marginLeft="-5dp"
+                        android:layout_marginRight="10dp"
+                        android:paddingRight="10dp"
+                        android:textSize="14dp"
+                        android:fontFamily="Montserrat"
+                        android:paddingTop="1dp"
+                        android:text="Beach"
+                        android:layout_column="3"
+
+                        android:textColor="@color/black" />
+                    <TextView
+                        android:id="@+id/dinnerIcon"
+                        android:layout_width="70dp"
+                        android:layout_height="24dp"
+                        android:background="@drawable/blackborder"
+                        android:paddingLeft="12dp"
+                        android:layout_marginLeft="-5dp"
+                        android:textSize="14dp"
+                        android:fontFamily="Montserrat"
+                        android:text="Dinner"
+                        android:paddingTop="1dp"
+                        android:layout_column="4"
+                        android:textColor="@color/black" />
+                </TableRow>
+                <TableRow>
+                <TextView
+                        android:id="@+id/dailyLifeIcon"
+                        android:layout_width="90dp"
+                        android:layout_height="24dp"
+                        android:paddingRight="12dp"
+                        android:background="@drawable/blackborder"
+                        android:paddingLeft="17dp"
+                        android:textSize="14dp"
+                        android:fontFamily="Montserrat"
+                        android:text="Daily Life"
+                        android:layout_column="1"
+                        android:layout_marginTop="5dp"
+                        android:paddingTop="1dp"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/datingIcon"
+                        android:layout_width="60dp"
+                        android:layout_height="24dp"
+                        android:background="@drawable/blackborder"
+                        android:paddingLeft="12dp"
+                        android:textSize="14dp"
+                        android:layout_marginLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:fontFamily="Montserrat"
+                        android:text="Dating"
+                        android:layout_column="2"
+                        android:paddingTop="1dp"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/black" />
+                    <TextView
+                        android:id="@+id/meetingIcon"
+                        android:layout_width="77dp"
+                        android:layout_height="24dp"
+                        android:background="@drawable/blackborder"
+                        android:paddingLeft="12dp"
+                        android:layout_marginLeft="5dp"
+                        android:paddingRight="12dp"
+                        android:textSize="14dp"
+                        android:fontFamily="Montserrat"
+                        android:layout_marginRight="-10dp"
+                        android:paddingTop="1dp"
+                        android:text="Meeting"
+                        android:layout_column="3"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/black" />
+
+                </TableRow>
+            </TableLayout>
+            <LinearLayout
+                android:id="@+id/dressCodeOnclick"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:scrollbars = "vertical"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="17dp"
+                    android:textSize="14dp"
+                    android:fontFamily="Montserrat"
+                    android:text="Dress Code"
+                    android:textFontWeight="500"
+                    android:textColor="@color/black"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/dressCodePlus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="17dp"
+                    android:layout_weight="2"
+                    android:fontFamily="Montserrat"
+                    android:text="+"
+                    android:textColor="@color/black"
+                    android:gravity="right"
+                    android:textSize="14dp" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="-1dp"
+                android:background="@color/light_gray" />
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:id="@+id/hideDressCode"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="24dp"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content">
+                    <TableLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TableRow>
+                            <TextView
+                                android:id="@+id/formalIcon"
+                                android:layout_width="65dp"
+                                android:layout_height="24dp"
+                                android:paddingRight="10dp"
+                                android:background="@drawable/blackborder"
+                                android:paddingLeft="10dp"
+                                android:textSize="14dp"
+                                android:fontFamily="Montserrat"
+                                android:text="Formal"
+                                android:paddingTop="1dp"
+                                android:layout_column="1"
+                                android:textColor="@color/black" />
+
+                            <TextView
+                                android:id="@+id/semiIcon"
+                                android:layout_width="100dp"
+                                android:layout_height="24dp"
+                                android:background="@drawable/blackborder"
+                                android:paddingLeft="10dp"
+                                android:textSize="14dp"
+                                android:layout_marginLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:fontFamily="Montserrat"
+                                android:text="Semi-formal"
+                                android:paddingTop="1dp"
+                                android:layout_column="2"
+                                android:textColor="@color/black" />
+                            <TextView
+                                android:id="@+id/informalIcon"
+                                android:layout_width="75dp"
+                                android:layout_height="24dp"
+                                android:background="@drawable/blackborder"
+                                android:paddingLeft="10dp"
+                                android:layout_marginLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:textSize="14dp"
+                                android:fontFamily="Montserrat"
+                                android:paddingTop="1dp"
+                                android:text="Informal"
+                                android:layout_column="3"
+                                android:textColor="@color/black" />
+                            <TextView
+                                android:id="@+id/casualIcon"
+                                android:layout_width="65dp"
+                                android:layout_height="24dp"
+                                android:background="@drawable/blackborder"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:layout_marginLeft="10dp"
+                                android:textSize="14dp"
+                                android:fontFamily="Montserrat"
+                                android:text="Casual"
+                                android:layout_marginRight="20dp"
+                                android:layout_column="4"
+                                android:paddingTop="1dp"
+                                android:textColor="@color/black" />
+                        </TableRow>
+                    </TableLayout>
+
+                </LinearLayout>
+            <LinearLayout
+                android:id="@+id/sizeOnclick"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:scrollbars = "vertical"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="17dp"
+                    android:textSize="14dp"
+                    android:fontFamily="Montserrat"
+                    android:text="Size"
+                    android:textFontWeight="500"
+                    android:textColor="@color/black"
+
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="17dp"
+                    android:layout_weight="2"
+                    android:fontFamily="Montserrat"
+                    android:text="Top"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="150dp"
+                    android:gravity="right"
+                    android:textSize="14dp" />
+                <TextView
+                    android:id="@+id/topSize"
+                    android:layout_width="30dp"
+                    android:layout_height="17dp"
+                    android:layout_weight="3"
+                    android:layout_marginLeft="5dp"
+                    android:fontFamily="Montserrat"
+                    android:text="M"
+                    android:textColor="@color/black"
+                    android:gravity="right"
+                    android:textSize="14dp" />
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="17dp"
+                    android:layout_weight="4"
+                    android:fontFamily="Montserrat"
+                    android:text="Bottom"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/black"
+                    android:gravity="right"
+                    android:textSize="14dp" />
+                <TextView
+                    android:id="@+id/bottomSize"
+                    android:layout_width="30dp"
+                    android:layout_height="17dp"
+                    android:layout_weight="5"
+                    android:layout_marginLeft="5dp"
+                    android:fontFamily="Montserrat"
+                    android:text="M"
+                    android:textColor="@color/black"
+                    android:gravity="right"
+                    android:textSize="14dp" />
+            </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="-1dp"
+            android:background="@color/light_gray" />
+                <TableLayout
+                    android:orientation="horizontal"
+                    android:id="@+id/hideSize"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="24dp"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content">
+                    <TableRow>
+                        <TextView
+                            android:layout_width="45dp"
+                            android:layout_height="24dp"
+                            android:textSize="14dp"
+                            android:fontFamily="Montserrat"
+                            android:text="Top"
+                            android:paddingTop="1dp"
+                            android:layout_column="1"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/topXSIcon"
+                            android:layout_width="35dp"
+                            android:layout_height="24dp"
+                            android:background="@drawable/blackborder"
+                            android:paddingLeft="8dp"
+                            android:textSize="14dp"
+                            android:layout_marginLeft="5dp"
+                            android:paddingRight="8dp"
+                            android:fontFamily="Montserrat"
+                            android:text="XS"
+                            android:paddingTop="1dp"
+                            android:layout_column="2"
+                            android:textColor="@color/black" />
+                        <TextView
+                            android:id="@+id/topSIcon"
+                            android:layout_width="26dp"
+                            android:layout_height="24dp"
+                            android:background="@drawable/blackborder"
+                            android:paddingLeft="8dp"
+                            android:layout_marginLeft="5dp"
+                            android:paddingRight="8dp"
+                            android:textSize="14dp"
+                            android:fontFamily="Montserrat"
+                            android:paddingTop="1dp"
+                            android:text="S"
+                            android:layout_column="3"
+                            android:textColor="@color/black" />
+                        <TextView
+                            android:id="@+id/topMIcon"
+                            android:layout_width="28dp"
+                            android:layout_height="24dp"
+                            android:background="@drawable/blackborder"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+                            android:layout_marginLeft="5dp"
+                            android:textSize="14dp"
+                            android:fontFamily="Montserrat"
+                            android:text="M"
+                            android:layout_column="4"
+                            android:paddingTop="1dp"
+                            android:textColor="@color/black" />
+                        <TextView
+                            android:id="@+id/topLIcon"
+                            android:layout_width="26dp"
+                            android:layout_height="24dp"
+                            android:background="@drawable/blackborder"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+                            android:layout_marginLeft="5dp"
+                            android:textSize="14dp"
+                            android:fontFamily="Montserrat"
+                            android:text="L"
+                            android:layout_column="5"
+                            android:paddingTop="1dp"
+                            android:textColor="@color/black" />
+                        <TextView
+                            android:id="@+id/topXLIcon"
+                            android:layout_width="33dp"
+                            android:layout_height="24dp"
+                            android:background="@drawable/blackborder"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+                            android:layout_marginLeft="5dp"
+                            android:textSize="14dp"
+                            android:fontFamily="Montserrat"
+                            android:text="XL"
+                            android:layout_column="6"
+                            android:paddingTop="1dp"
+                            android:textColor="@color/black" />
+                        <TextView
+                            android:id="@+id/top2XLIcon"
+                            android:layout_width="41dp"
+                            android:layout_height="24dp"
+                            android:background="@drawable/blackborder"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+                            android:layout_marginLeft="5dp"
+                            android:textSize="14dp"
+                            android:fontFamily="Montserrat"
+                            android:text="2XL"
+                            android:layout_column="7"
+                            android:paddingTop="1dp"
+                            android:textColor="@color/black" />
+                        <TextView
+                            android:id="@+id/top3XLIcon"
+                            android:layout_width="43dp"
+                            android:layout_height="24dp"
+                            android:background="@drawable/blackborder"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+                            android:layout_marginLeft="5dp"
+                            android:textSize="14dp"
+                            android:fontFamily="Montserrat"
+                            android:text="3XL"
+                            android:layout_column="8"
+                            android:paddingTop="1dp"
+                            android:textColor="@color/black" />
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:layout_width="53dp"
+                            android:layout_height="24dp"
+                            android:textSize="14dp"
+                            android:fontFamily="Montserrat"
+                            android:text="Bottom"
+                            android:paddingTop="1dp"
+                            android:layout_column="1"
+                            android:layout_marginTop="10dp"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/bottomXSIcon"
+                            android:layout_width="35dp"
+                            android:layout_height="24dp"
+                            android:background="@drawable/blackborder"
+                            android:paddingLeft="8dp"
+                            android:textSize="14dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="-5dp"
+                            android:paddingRight="8dp"
+                            android:fontFamily="Montserrat"
+                            android:text="XS"
+                            android:paddingTop="1dp"
+                            android:layout_column="2"
+                            android:layout_marginTop="10dp"
+                            android:textColor="@color/black" />
+                        <TextView
+                            android:id="@+id/bottomSIcon"
+                            android:layout_width="26dp"
+                            android:layout_height="24dp"
+                            android:background="@drawable/blackborder"
+                            android:paddingLeft="8dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="-5dp"
+                            android:paddingRight="8dp"
+                            android:textSize="14dp"
+                            android:fontFamily="Montserrat"
+                            android:paddingTop="1dp"
+                            android:text="S"
+                            android:layout_column="3"
+                            android:layout_marginTop="10dp"
+                            android:textColor="@color/black" />
+                        <TextView
+                            android:id="@+id/bottomMIcon"
+                            android:layout_width="28dp"
+                            android:layout_height="24dp"
+                            android:background="@drawable/blackborder"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="-5dp"
+                            android:textSize="14dp"
+                            android:fontFamily="Montserrat"
+                            android:text="M"
+                            android:layout_column="4"
+                            android:paddingTop="1dp"
+                            android:layout_marginTop="10dp"
+                            android:textColor="@color/black" />
+                        <TextView
+                            android:id="@+id/bottomLIcon"
+                            android:layout_width="26dp"
+                            android:layout_height="24dp"
+                            android:background="@drawable/blackborder"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+                            android:layout_marginLeft="10dp"
+                            android:textSize="14dp"
+                            android:fontFamily="Montserrat"
+                            android:text="L"
+                            android:layout_column="5"
+                            android:layout_marginRight="-5dp"
+                            android:paddingTop="1dp"
+                            android:layout_marginTop="10dp"
+                            android:textColor="@color/black" />
+                        <TextView
+                            android:id="@+id/bottomXLIcon"
+                            android:layout_width="33dp"
+                            android:layout_height="24dp"
+                            android:background="@drawable/blackborder"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+                            android:layout_marginLeft="10dp"
+                            android:textSize="14dp"
+                            android:fontFamily="Montserrat"
+                            android:text="XL"
+                            android:layout_column="6"
+                            android:paddingTop="1dp"
+                            android:layout_marginRight="-5dp"
+                            android:layout_marginTop="10dp"
+                            android:textColor="@color/black" />
+                        <TextView
+                            android:id="@+id/bottom2XLIcon"
+                            android:layout_width="41dp"
+                            android:layout_height="24dp"
+                            android:background="@drawable/blackborder"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+                            android:layout_marginLeft="10dp"
+                            android:textSize="14dp"
+                            android:fontFamily="Montserrat"
+                            android:text="2XL"
+                            android:layout_column="7"
+                            android:paddingTop="1dp"
+                            android:layout_marginRight="-5dp"
+                            android:layout_marginTop="10dp"
+                            android:textColor="@color/black" />
+                        <TextView
+                            android:id="@+id/bottom3XLIcon"
+                            android:layout_width="43dp"
+                            android:layout_height="24dp"
+                            android:background="@drawable/blackborder"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+                            android:layout_marginLeft="10dp"
+                            android:textSize="14dp"
+                            android:fontFamily="Montserrat"
+                            android:layout_marginRight="-5dp"
+                            android:text="3XL"
+                            android:layout_column="8"
+                            android:paddingTop="1dp"
+                            android:layout_marginTop="10dp"
+                            android:textColor="@color/black" />
+                    </TableRow>
+                </TableLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_height="24dp">
+                <TextView
+                    android:id="@+id/cancel_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:fontFamily="Montserrat"
+                    android:text="@string/Clear_All"
+                    android:layout_marginTop="6dp"
+                    android:textColor="@color/gray"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/search"
+                    android:layout_width="75dp"
+                    android:layout_height="24dp"
+                    android:background="@drawable/search_btn"
+                    android:textColor="@color/white"
+                    android:layout_gravity="right"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/totalMatched"
+                    android:text="6 suits match"
+                    android:textFontWeight="300"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+            </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/Closet_results_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+    </LinearLayout>
+
+    </ScrollView>
+    <Button
+        android:id="@+id/toTop"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/large_icon"
+        android:layout_gravity="end"
+        android:layout_marginBottom="16dp"
+        app:borderWidth="0dp"
+        android:layout_marginRight="16dp" />
+</RelativeLayout>

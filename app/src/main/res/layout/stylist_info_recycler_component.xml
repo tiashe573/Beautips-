@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/layoutProfile"
+        tools:context="com.laioffer.beautips.Fragments.StylistPage.StylistProfileFragment">
+
+
+    <TextView
+        android:id="@+id/age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="74dp"
+        android:fontFamily="@font/montserrat"
+        android:text="#22 years"
+        android:textColor="#0B0606"
+        app:layout_constraintBottom_toTopOf="@+id/tab"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.157"
+        app:layout_constraintStart_toEndOf="@+id/size"
+        app:layout_constraintTop_toTopOf="@+id/ratingBar"
+        tools:ignore="MissingConstraints" />
+
+
+    <ImageView
+        android:id="@+id/stylist_image"
+        android:layout_width="90dp"
+        android:layout_height="94dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="95dp"
+        android:src="@drawable/myimage"
+        app:layout_constraintBottom_toTopOf="@+id/tab"
+        app:layout_constraintEnd_toStartOf="@+id/stylist_name"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <View
+        android:id="@+id/frame_431"
+        android:layout_width="16dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/frame_431"
+        android:elevation="1dp"
+        android:scaleX="1.42"
+        android:scaleY="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/body_shape"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/stylist_name"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="39dp"
+        android:layout_height="13dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="73dp"
+        android:layout_marginBottom="107dp"
+        android:layout_marginEnd="20dp"
+        android:elevation="3dp"
+        android:scaleX="0.7"
+        android:scaleY="0.7"
+        android:src="@drawable/vvector"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/body_shape"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/stylist_name"
+        tools:ignore="MissingConstraints" />
+
+        <!-- Beautips advisor -->
+
+
+        <!-- Followrs, LIke, customers-->
+
+        <!-- separation bar-->
+
+
+    <TextView
+        android:id="@+id/stylist_name"
+        android:layout_width="132dp"
+        android:layout_height="23dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="250dp"
+        android:fontFamily="@font/montserrat"
+        android:gravity="top"
+        android:text="Abby shrinsk"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#D2170E0E"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/viewPager"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/stylist_title"
+        android:layout_width="144dp"
+        android:layout_height="17dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="40dp"
+        android:fontFamily="@font/montserrat"
+        android:gravity="center_vertical"
+        android:text="Beautips_advisor"
+        android:textAppearance="@style/beautips_ad"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ratingBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/stylist_name"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="37dp"
+        android:fontFamily="@font/montserrat"
+        android:text="Followers"
+        android:textColor="#0C0A0A"
+        app:layout_constraintBottom_toTopOf="@+id/tab"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/body_shape"
+        app:layout_constraintVertical_bias="0.437" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="37dp"
+        android:fontFamily="@font/montserrat"
+        android:text="Likes"
+        android:textColor="#0E0303"
+        app:layout_constraintBottom_toTopOf="@+id/tab"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/body_shape" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="37dp"
+        android:fontFamily="@font/montserrat"
+        android:text="Customers"
+        android:textColor="#0E0202"
+        app:layout_constraintBottom_toTopOf="@+id/tab"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.388"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/body_shape" />
+
+    <View
+        android:id="@+id/line_"
+        android:layout_width="1px"
+        android:layout_height="50px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="37dp"
+        android:background="@drawable/line"
+        android:backgroundTint="#3C2E2E"
+        app:layout_constraintBottom_toTopOf="@+id/tab"
+        app:layout_constraintEnd_toStartOf="@+id/num_customers"
+        app:layout_constraintStart_toEndOf="@+id/num_likes"
+        app:layout_constraintTop_toBottomOf="@+id/body_shape"
+        tools:ignore="MissingConstraints" />
+
+    <View
+        android:id="@+id/line_6"
+        android:layout_width="1px"
+        android:layout_height="50px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="37dp"
+        android:background="@drawable/line"
+        android:backgroundTint="#604B4B"
+        app:layout_constraintBottom_toTopOf="@+id/tab"
+        app:layout_constraintEnd_toStartOf="@+id/textView3"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/body_shape"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/nums_follows"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+
+        android:layout_marginEnd="255dp"
+        android:layout_marginBottom="22dp"
+        android:text="110"
+        android:textColor="#0C0A0A"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/num_likes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="19dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="22dp"
+        android:text="110"
+        android:textColor="#040303"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/num_customers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="255dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="22dp"
+        android:text="2345"
+        android:textColor="#070606"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/body_shape"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:layout_marginStart="220dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginBottom="74dp"
+        android:fontFamily="@font/montserrat"
+        android:text="#Round Shape"
+        android:textColor="#050303"
+        app:layout_constraintBottom_toTopOf="@+id/tab"
+        app:layout_constraintEnd_toStartOf="@+id/size"
+        app:layout_constraintStart_toEndOf="@+id/stylist_image"
+        app:layout_constraintTop_toTopOf="@+id/ratingBar"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginBottom="74dp"
+        android:fontFamily="@font/montserrat"
+        android:text="#M Size"
+        android:textColor="#0C0606"
+        app:layout_constraintBottom_toTopOf="@+id/tab"
+        app:layout_constraintEnd_toStartOf="@+id/ratingBar"
+        app:layout_constraintStart_toEndOf="@+id/body_shape"
+        app:layout_constraintTop_toTopOf="@+id/ratingBar"
+        app:layout_constraintVertical_bias="0.454"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_follow"
+            android:layout_width="69dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="30dp"
+
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="30dp"
+            android:background="@android:color/white"
+            android:backgroundTint="#FA7575"
+            android:fontFamily="@font/montserrat"
+            android:text="Follow"
+            android:textColor="@color/white"
+            android:textSize="9sp"
+            app:layout_constraintBottom_toTopOf="@+id/reviewsNum"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/stylist_name"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/reviewsNum"
+        android:layout_width="88dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="190dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/montserrat"
+        android:text="61 Reviews"
+        app:layout_constraintStart_toStartOf="@+id/ratingBar"
+        app:layout_constraintTop_toBottomOf="@+id/stylist_title"
+        tools:ignore="MissingConstraints" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="248dp"
+        android:layout_height="50dp"
+
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="53dp"
+        android:layout_marginBottom="87dp"
+        android:background="#07ECE1E1"
+        android:progressTint="#FFEC40"
+        android:rating="3"
+        android:scaleX="0.5"
+        android:scaleY="0.5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stylist_name"
+        tools:ignore="MissingConstraints" />
+
+
+    <!--    <com.google.android.material.tabs.TabLayout-->
+<!--        android:id="@+id/tab_LAYOUT"-->
+<!--        android:layout_width="219dp"-->
+<!--        android:layout_height="25dp"-->
+<!--        android:layout_marginTop="230dp"-->
+
+<!--        android:paddingBottom="2dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:tabIndicatorColor="#FA7575"-->
+<!--        app:tabTextAppearance="@style/tab_text"-->
+<!--        app:tabTextColor="@color/black"-->
+<!--        tools:ignore="MissingConstraints">-->
+
+<!--        <com.google.android.material.tabs.TabItem-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Posts" />-->
+
+<!--        <com.google.android.material.tabs.TabItem-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Reviews" />-->
+<!--    </com.google.android.material.tabs.TabLayout>-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="336dp"
+    android:layout_height="71dp"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="8dp"
+    android:id="@+id/card_list">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp">
+
+        <ImageView
+            android:id="@+id/stylist_image"
+            android:layout_width="53dp"
+            android:layout_height="53dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="3dp"
+            android:src="@drawable/myimage"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/frame_431"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="42dp"
+            android:layout_marginTop="37dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="83dp"
+            android:background="@drawable/frame_431"
+            android:elevation="1dp"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/vimage"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginStart="42dp"
+            android:elevation="3dp"
+            android:scaleX="0.4"
+            android:scaleY="0.4"
+            android:src="@drawable/vvector"
+            tools:ignore="MissingConstraints"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="@+id/frame_431"
+            tools:layout_editor_absoluteX="37dp"
+            tools:layout_editor_absoluteY="37dp" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="13px"
+            android:fontFamily="@font/montserrat"
+            android:text="Abby"
+            android:textSize="14dp"
+            app:layout_constraintStart_toEndOf="@id/stylist_image"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/stylist_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="17px"
+            android:fontFamily="@font/montserrat"
+            android:text="Beautips advisor"
+            android:textColor="#AAAAAA"
+
+            android:textSize="11dp"
+            app:layout_constraintStart_toEndOf="@id/name"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:layout_width="82dp"
+            android:layout_height="16dp"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="34dp"
+            android:layout_marginBottom="11.6dp"
+            android:numStars="5"
+            android:progressTint="#FFEC40"
+            android:rating="4"
+            android:scaleX="1"
+            android:scaleY="1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/stylist_image"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/reviews"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8.2dp"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/montserrat"
+            android:text="80 Reviews"
+            android:textColor="#666666"
+            android:textSize="12dp"
+            app:layout_constraintStart_toEndOf="@id/ratingBar"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>
